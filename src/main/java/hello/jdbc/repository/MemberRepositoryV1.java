@@ -4,7 +4,6 @@ import hello.jdbc.connenction.DBConnectionUtil;
 import hello.jdbc.domain.Member;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
@@ -12,7 +11,7 @@ import java.util.NoSuchElementException;
  * JDBC - DriverManager사용
  */
 @Slf4j
-public class MemberRepositoryV0 {
+public class MemberRepositoryV1 {
 
     public Member save(Member member) throws SQLException {
         String sql = "insert into member(member_id,money) values (?,?)";
